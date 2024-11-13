@@ -1,1 +1,0 @@
- D:\\Workspace\\FatCat\\src\\frontend\\.dart_tool\\flutter_build\\da1e9431eccf18deb53a84db87984777\\native_assets.yaml: 
