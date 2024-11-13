@@ -1,0 +1,4 @@
+#Fri Nov 01 12:21:45 ICT 2024
+base.0=D\:\\Workspace\\FatCat\\src\\frontend\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

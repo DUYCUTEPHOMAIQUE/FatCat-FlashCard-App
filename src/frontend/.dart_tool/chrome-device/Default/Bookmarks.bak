@@ -1,0 +1,459 @@
+{
+   "checksum": "d80c8fe65088fd55f8b739325dc786c3",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13292334242020769",
+            "date_last_used": "13370497757358816",
+            "guid": "0f99a1c5-a029-4aab-98e8-f553772ba09a",
+            "id": "6",
+            "name": "Facebook",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.facebook.com/",
+            "visit_count": 1
+         }, {
+            "date_added": "13292695192474937",
+            "date_last_used": "13374151059240412",
+            "guid": "7c3872d3-30a7-4db7-bdba-7db44bc4cbe8",
+            "id": "7",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.youtube.com/",
+            "visit_count": 129
+         }, {
+            "date_added": "13296955960051947",
+            "date_last_used": "0",
+            "guid": "be8ea2f5-68e1-4e2b-9252-76abee68bb9e",
+            "id": "8",
+            "name": "Meet - Phòng Ngủ",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://meet.google.com/ziq-eegb-ast?pli=1&authuser=0",
+            "visit_count": 0
+         }, {
+            "date_added": "13296160889744731",
+            "date_last_used": "13372927847229198",
+            "guid": "44d488fb-f4cc-4c87-98aa-f354f8e4adfd",
+            "id": "9",
+            "name": "Zalo Web",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.zalo.me/",
+            "visit_count": 12
+         }, {
+            "date_added": "13323192065889583",
+            "date_last_used": "13370573153329949",
+            "guid": "d6249b0c-0a78-4cca-9eb0-d251f40856f8",
+            "id": "10",
+            "name": "Microsoft Teams",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://teams.microsoft.com/_?culture=vi-vn&country=vn#/school/teams-grid/General?ctx=teamsGrid",
+            "visit_count": 3
+         }, {
+            "date_added": "13326910771140959",
+            "date_last_used": "13374575508233394",
+            "guid": "84f60314-354c-4c36-9528-3ba9dd3eb5eb",
+            "id": "11",
+            "name": "chat GPT",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://chat.openai.com/?__cf_chl_tk=qsfoVj.zbohJaC6TQVCoUpNFM6VKZkrqgEaCcgyIO7M-1682437167-0-gaNycGzNGVA",
+            "visit_count": 120
+         }, {
+            "date_added": "13342174744382817",
+            "date_last_used": "13374812844504936",
+            "guid": "f8dde69e-07a8-4a03-a44b-cdb0743521e1",
+            "id": "12",
+            "name": "GitHub",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/",
+            "visit_count": 61
+         }, {
+            "date_added": "13347630539844216",
+            "date_last_used": "0",
+            "guid": "356c57c9-84aa-443a-b1cf-4652fa093bb6",
+            "id": "13",
+            "name": "Anime | Template",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://themewagon.github.io/anime/",
+            "visit_count": 0
+         }, {
+            "date_added": "13354802577385467",
+            "date_last_used": "0",
+            "guid": "cb43a671-4170-42e7-9ee8-4eabb9ae5376",
+            "id": "14",
+            "name": "Course: BL-ED3220-150843 - Kỹ năng mềm",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://lms.hust.edu.vn/course/view.php?id=2013",
+            "visit_count": 0
+         }, {
+            "date_added": "13364654206294826",
+            "date_last_used": "0",
+            "guid": "94219a92-dd72-459e-9914-0ddc01ce2878",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Instagram",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.instagram.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13367415479097362",
+            "date_last_used": "0",
+            "guid": "eae965d2-6c93-4126-90b2-88a1bc7b81d5",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Google Docs",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.google.com/document/u/3/",
+            "visit_count": 0
+         }, {
+            "date_added": "13372044112256945",
+            "date_last_used": "0",
+            "guid": "13d641e0-8a9a-47be-a075-ad29200ae707",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Figma",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.figma.com/files/team/1422012487141179958/recents-and-sharing/recently-viewed?fuid=1422012483250563752",
+            "visit_count": 1
+         }, {
+            "date_added": "13351235182940408",
+            "date_last_used": "13371718735257798",
+            "guid": "3ca90b37-a627-4b5a-a45b-91dfd1637d1b",
+            "id": "18",
+            "name": "tailieu",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/1DAiBxXgK9-nEIDQTfWXzrG4fIw2Ayspt",
+            "visit_count": 2
+         }, {
+            "date_added": "13357086301977054",
+            "date_last_used": "0",
+            "guid": "bc19655f-7b83-4567-899e-dd1e8c0027d5",
+            "id": "19",
+            "name": "Untitled | Visual Paradigm Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&type=UseCaseDiagram&width=11&height=8.5&unit=inch",
+            "visit_count": 0
+         }, {
+            "date_added": "13366547126886808",
+            "date_last_used": "0",
+            "guid": "72e639ed-00c2-4b02-877c-37e14217d12c",
+            "id": "20",
+            "name": "Sign In",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://tracker.network/auth/login",
+            "visit_count": 0
+         }, {
+            "date_added": "13357088506016070",
+            "date_last_used": "0",
+            "guid": "3cffdfbd-0247-461a-b3b1-364a9ccb9784",
+            "id": "21",
+            "name": "Untitled | Visual Paradigm Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://online.visual-paradigm.com/w/hieiwelq/diagrams/#diagram:proj=0&type=ClassDiagram&width=11&height=8.5&unit=inch",
+            "visit_count": 0
+         }, {
+            "date_added": "13357723160702162",
+            "date_last_used": "0",
+            "guid": "ea9202a9-6de5-4ab2-a24e-0a16de3d2cc6",
+            "id": "22",
+            "name": "How to add tailwindcss to a simple HTML Project 🍵 - DEV Community",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://dev.to/raphaelmansuy/how-to-add-tailwindcss-to-a-simple-html-project-446g",
+            "visit_count": 0
+         }, {
+            "date_added": "13359034191843808",
+            "date_last_used": "0",
+            "guid": "5b5e7452-5b50-44e7-87e6-3a177a22fac2",
+            "id": "23",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Untitled | Visual Paradigm Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&type=ERDiagram&width=11&height=8.5&unit=inch",
+            "visit_count": 0
+         }, {
+            "date_added": "13359828388408860",
+            "date_last_used": "0",
+            "guid": "9f748c9d-aae2-4a53-9d21-6b526186a577",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "android - Animating strike-through on a TextView - Stack Overflow",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/19534454/animating-strike-through-on-a-textview",
+            "visit_count": 0
+         }, {
+            "date_added": "13359947856338609",
+            "date_last_used": "0",
+            "guid": "cee82d1f-7e27-4711-8b0b-c5b997070d8e",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Swipe to Delete and Undo in Android RecyclerView - GeeksforGeeks",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.geeksforgeeks.org/swipe-to-delete-and-undo-in-android-recyclerview/",
+            "visit_count": 0
+         }, {
+            "date_added": "13360776816905882",
+            "date_last_used": "0",
+            "guid": "ebcffe54-382f-47ce-97b7-40b839fea9e7",
+            "id": "26",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Android Developers Blog: Continuous Shared Element Transitions: RecyclerView to ViewPager",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://android-developers.googleblog.com/2018/02/continuous-shared-element-transitions.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13360777346027812",
+            "date_last_used": "0",
+            "guid": "a8171cfa-6f19-451c-8a88-5de1e7e376c6",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "animation-samples/ActivitySceneTransitionBasic at main · android/animation-samples",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/android/animation-samples/tree/main/ActivitySceneTransitionBasic",
+            "visit_count": 0
+         }, {
+            "date_added": "13364212447312361",
+            "date_last_used": "0",
+            "guid": "37ea4d5b-aaf8-49bc-87e9-94f6d438a5a5",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Untitled document - Google Docs",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.google.com/document/d/15CiPeP4lTx4O2RBE8QvbomNDGGK5jFnZ3tmvEAgjj3M/edit",
+            "visit_count": 0
+         }, {
+            "date_added": "13366396394264190",
+            "date_last_used": "0",
+            "guid": "58c810c2-81a8-4096-9708-ebed5b1811a0",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "@expo/vector-icons@14.0.2",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://icons.expo.fyi/Index",
+            "visit_count": 0
+         }, {
+            "date_added": "13367416453037041",
+            "date_last_used": "0",
+            "guid": "5c119ba9-6c75-4969-ab8f-a61da2671f6e",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Untitled document - Google Docs",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.google.com/document/d/1bT2sx9hfF-Tm4UKNS7-mGwOJt9XlCAufvLlwp0n70w4/edit",
+            "visit_count": 0
+         }, {
+            "date_added": "13367679453393013",
+            "date_last_used": "0",
+            "guid": "8cc0b5a2-4160-4302-8616-f64ae8637e04",
+            "id": "31",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CTTBK • Courses register",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://dt-ctt.hust.edu.vn/Students/CoursesRegister.aspx",
+            "visit_count": 0
+         }, {
+            "date_added": "13367684828505593",
+            "date_last_used": "0",
+            "guid": "918ff314-974e-4439-aee1-b007a10027c4",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "hieupham2k1",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://hieupham2k1.web.app/time-table",
+            "visit_count": 0
+         }, {
+            "date_added": "13372010447156490",
+            "date_last_used": "0",
+            "guid": "82f04d85-c54f-48e2-944a-757c7878e8db",
+            "id": "33",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Untitled | Visual Paradigm Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://online.visual-paradigm.com/w/hieiwelq/diagrams/#diagram:proj=0&type=UseCaseDiagram&width=11&height=8.5&unit=inch",
+            "visit_count": 1
+         }, {
+            "date_added": "13372011155983701",
+            "date_last_used": "0",
+            "guid": "ebd9490c-935e-478b-86a7-04400c9022f3",
+            "id": "34",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "btl-yd-dnt | Visual Paradigm Online",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://online.visual-paradigm.com/w/hieiwelq/diagrams/#diagram:workspace=hieiwelq&proj=0&id=4&type=UseCaseDiagram&width=11&height=8.5&unit=inch",
+            "visit_count": 1
+         } ],
+         "date_added": "13374834221006704",
+         "date_last_used": "0",
+         "date_modified": "13372044112256945",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13374834221006706",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13297492615220329",
+            "date_last_used": "0",
+            "guid": "6ac75f16-2900-469e-8435-9bd101287a46",
+            "id": "35",
+            "name": "https://l.facebook.com/l.php?u=https%3A%2F%2Fcdn.fbsbx.com%2Fv%2Ft59.2708-21%2F283036154_5269637863074807_8117035645184242252_n.pdf%2F%25C4%2590%25E1%25BB%2580-S%25E1%25BB%2590-17.pdf%3F_nc_cat%3D104%26ccb%3D1-7%26_nc_sid%3D0cab14%26_nc_ohc%3DhwZGblckot4AX8JAl1q%26_nc_ht%3Dcdn.fbsbx.com%26oh%3D03_AVJOXAlH-8GXeKIWD5QbciG5fP3PV0iOv9EuIPkReKAQCA%26oe%3D6288726C%26dl%3D1&h=AT0YpUqcndNu5aW-H1_QNdcFzhqH5JnuY2A18G5Fcflz78-IOX3cKbpgDuj6vkM0Z6h1Xrw98EKC5YPoC4mAsoWIUIzLkOx1ZkGpoQjc0a_N15YmMS5Sk2EnEIJHu3KpCThXy-1C3pufb5tWNkFDHVL-qkm_hRId",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fcdn.fbsbx.com%2Fv%2Ft59.2708-21%2F283036154_5269637863074807_8117035645184242252_n.pdf%2F%25C4%2590%25E1%25BB%2580-S%25E1%25BB%2590-17.pdf%3F_nc_cat%3D104%26ccb%3D1-7%26_nc_sid%3D0cab14%26_nc_ohc%3DhwZGblckot4AX8JAl1q%26_nc_ht%3Dcdn.fbsbx.com%26oh%3D03_AVJOXAlH-8GXeKIWD5QbciG5fP3PV0iOv9EuIPkReKAQCA%26oe%3D6288726C%26dl%3D1&h=AT0YpUqcndNu5aW-H1_QNdcFzhqH5JnuY2A18G5Fcflz78-IOX3cKbpgDuj6vkM0Z6h1Xrw98EKC5YPoC4mAsoWIUIzLkOx1ZkGpoQjc0a_N15YmMS5Sk2EnEIJHu3KpCThXy-1C3pufb5tWNkFDHVL-qkm_hRId",
+            "visit_count": 0
+         }, {
+            "date_added": "13330542228000354",
+            "date_last_used": "0",
+            "guid": "533eae55-fe31-40db-9bd1-30f1268840e5",
+            "id": "36",
+            "name": "30 Days Of Python",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://blog.teclado.com/30-days-of-python/?fbclid=IwAR1PfWdDJGcTtRJGArmlC-FECpRwNnx7enNCzYHBfU5xMtNIPJT7aaSc52A",
+            "visit_count": 0
+         }, {
+            "date_added": "13331633717343600",
+            "date_last_used": "0",
+            "guid": "9bb700e9-83f2-4b68-b871-7106619943a6",
+            "id": "37",
+            "name": "Inspect elements",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "javascript:(%C2%A0 %C2%A0 () => {%C2%A0 %C2%A0 %C2%A0 %C2%A0 var script = document.createElement('script');%C2%A0 %C2%A0 %C2%A0 %C2%A0 script.src = \"//cdn.jsdelivr.net/npm/eruda\";%C2%A0 %C2%A0 %C2%A0 %C2%A0 document.body.appendChild(script);%C2%A0 %C2%A0 %C2%A0 %C2%A0 script.onload = (() => eruda.init());%C2%A0 %C2%A0 })()",
+            "visit_count": 0
+         }, {
+            "date_added": "13331847352231137",
+            "date_last_used": "0",
+            "guid": "701f5141-098a-4f1b-8e69-5996cb0fc4ff",
+            "id": "38",
+            "name": "17 Dự án JavaScript, Bài tập Javascript cho người mới học",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://niithanoi.edu.vn/du-an-javascript-cho-nguoi-moi-hoc.html",
+            "visit_count": 0
+         }, {
+            "date_added": "13332232526430538",
+            "date_last_used": "0",
+            "guid": "bc55dbfb-5b74-4115-a985-46c0cad149e9",
+            "id": "39",
+            "name": "5. Data Structures — Python 3.11.4 documentation",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.python.org/3/tutorial/datastructures.html?fbclid=IwAR1xCIkVWzzXdjqfs43oaCV-wsuFMJxqnNw7VGsRUNzKyrcLFkN2lFgPmlw",
+            "visit_count": 0
+         } ],
+         "date_added": "13374834221006708",
+         "date_last_used": "0",
+         "date_modified": "13332232526430538",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CjEKDgiIgQISCO6dQeCSAQAAEgAqGEwvZjZnOFJsVzJZMlJWWVZ2cEEwYmc9PUgDoAYHEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDA3YTkyOWFmLWJkM2UtNWQzYS1iNzcyLWRlN2E4ODE5MzE5NxgAIAAoADDnsomB6C84xaGopIMwQMWhqKSDMEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKtAQgnEqgBChw4c0tCT0RQK2t6Ym96ZEFnUGYxN3pJaTYzT2M9EiRiYzU1ZGJmYi01Yjc0LTQxMTUtYTk4NS00NmMwY2FkMTQ5ZTkYACAAKAAwst6k2+8xOJrmpNvvMUCa5qTb7zFKHG1QVDc5UHJHYzRmMU1vNDUyMzZ5SWkxckRwRT1aHyId82UzNlBIaldyMy84WXNWbE1ZeDJleGlnVXg2ST1loyjrE8I+AmAFEq0BCCQSqAEKHHByYUJhaU5McmV4Yk94NTZqb3Z2M2EzQTV3ND0SJDUzM2VhZTU1LWZlMzEtNDBkYi05YmQxLTMwZjEyNjg4NDBlNRgAIAAoADCbzaTb7zE4gtSk2+8xQILUpNvvMUocSGRnbkNNa3NxY1RXRDBBd09zcjljOEJCbkVRPVofIh2ZMFF0L3lLbUtvREQrL1ZjN2JZY3JZUW1SamRVPWXZzu2Jwj4CYAUSrwEIHxKqAQoceTdoSDF2RWtyVFVLWFkzTUY4bDYycStXRUE0PRIkOGNjMGI1YTItNDE2MC00MzAyLTg2MTYtZjY0YWU4NjM3ZTA0GAAgACgAMMPayriTMjjS3sq4kzJA0t7KuJMyShxyUUVCNGl0UGhWMzRwWHBnZVFqNGhQNHozWFE9WiEiH///7Wd2cm02a21GNm5DYmhaQ3g5NTdkUUlLbC81RT1lAAAAAMI+AmAFEq8BCB4SqgEKHEIrSEZjME1KWFJYTld1WFRnYTFWbGV5MzJKaz0SJDVjMTE5YmE5LTZjNzUtNDk2OS1hYjhmLWE2MWRhMjY3MWY2ZRgAIAAoADCSuJa7kjI4oLuWu5IyQKC7lruSMkocSjBFaUp1eEY0bG5sWWl3K2tWR3NtSzVXbFFFPVohIh///9tuNlp2eEkzeEh3Tmo0MU9vVm9oeW5wOXRJOTQ9ZTnGtrDCPgJgBRKvAQghEqoBChxxSEpjc05OUHFMc3c5dWJIOFRIMHJhWjBDMVk9EiQ4MmYwNGQ4NS1jNTRmLTQ4ZTItOTQ0YS03NTdjNzg3OGU4ZGIYACAAKAAw89HhyaMyOIDU4cmjMkCA1OHJozJKHHdqeksrZXgwdHgzVytTZmsvS2hwTDRmeEVCST1aISIf///7N3Mva0JraTlYZnkrWGF1M1RkMmNZd1B4M0lBPWX/jveAwj4CYAUSrgEIHBKpAQocYUlZZ3F0WkZybWR5SXhFMnA3NmNoVitXU1RnPRIkMzdlYTRkNWItYWFmOC00OWJjLTg3ZTktOTRmNmQ0MzhhNWE1GAAgACgAMLO0scOGMjjsuLHDhjJA7Lixw4YyShxLcjB3TlFncTdDYkI4eVlwWExIQTZPczZ4aXM9WiAiHv//bXZDUWhnUW1hZlppSGJwVEovVHFtS1g5Z1FNPWU5xrawwj4CYAUSrwEIIhKqAQocUStoMENSTVYveUhZNE1IM3d4cVdHRDZiY1ZvPRIkZWJkOTQ5MGMtOTM1ZS00NzhiLTg2YTctMDQ0MDBjOTAyMmYzGAAgACgAMPjzjMqjMjjA9ozKozJAwPaMyqMyShxLMlZ3U2xURTlZZHBZWFJweFJCUWxWU0VtaDg9WiEiH////VA1d1RKQnVhRzFDYzBiSUtobW9zUmMwSUpnYz1l/473gMI+AmAFEq8BCCASqgEKHHhwQ2VzaENqTHowdC9zT1BoVDY1QlQ0OFZHcz0SJDkxOGZmMzE0LTk3NGUtNDQzOS1hZWUxLWIwMDdhMTAwMjdjNBgAIAAoADCV5ZK7kzI4j+ySu5MyQI/skruTMkoccEJEZjZnUmYrVWV6c2lFZFB2WmQ1TVl4cXQ4PVohIh////ZKT3h0SmcycmQ3YnZEcHd1VnF0d2kySWlQK2c9Zd+3F57CPgJgBRKuAQgQEqkBChxCNEc3NndZdFJDMnFIVGEwMmhoMGF3MEhmcVE9EiRlYWU5NjVkMi02YzkzLTQxMjYtOTBiMi04OGExYmM3YjgxZDUYACAAKAAw0dPbupIyOO2B27qSMkDtgdu6kjJKHFBYZ29lRlprRnhmSXlzaS91aDl4Qk9rbEhwTT1aICIe/+lxL0I2OTRZL1IwQjFCcEZvdm9JbzV1V2VTNms9ZTnGtrDCPgJgBRKuAQgaEqkBChx0TzVxYU1TcDdvcEhobnpJbVh4YXFWckZ3Tjg9EiRlYmNmZmU1NC0zODJmLTQ3Y2UtOTdiNy00MGI4MzlmZWE5ZTcYACAAKAAw0YmT3fkxOKeMk935MUCnjJPd+TFKHEYwWUFPV2dJb0s5cjNwa1REU2ZnbVdzZE5oYz1aICIe//9oaWRwelpSY1ljZEU1dDB1R0dmNkhVYTRvL1k9ZeR61ivCPgJgBRKtAQgmEqgBChxJclg4cGFtczQ3MW1vLzR1REZJVVVkNkFoUWc9EiQ3MDFmNTE0MS0wOThhLTRmMWItOGU2OS01OTk2Y2IwZmM0ZmYYACAAKAAwsN6k2+8xONLlpNvvMUDS5aTb7zFKHGtaVXhNK1ZYRVlnZDZpRW43YkVRamxmOFhhcz1aHyId5klheWZQWlJHWGpkNnNaeThMMGpEa3ZGNEtMWT1lANxPOMI+AmAFEq8BCB0SqgEKHGRTQlZnWWwrRW4yM1FCYWRkcFpNSnppbDNTaz0SJDU4YzgxMGMyLTgxYTgtNDA5Ni05NzA4LWViZWQ1YjE4MTFhMBgAIAAoADCbiOPUjjI4rI7j1I4yQKyO49SOMkocTG9iM3dVR2pONUlCRmY0emJraTFIR1ZaV0djPVohIh///7Y5aDUvbVRoZCt4QmxvOTgxZHpxQ2RYSlYyWjQ9ZVJpWWXCPgJgBRKuAQgWEqkBChxHUzRIYmhGZm0rMEhoTXg3NDRoUzVuS0F6SXc9EiRlYTkyMDJhOS02ZGU1LTRhYjItYTI0ZS0wYTE2ZGUzZDJjYzYYACAAKAAwl82k2+8xOPTSpNvvMUD00qTb7zFKHFFOVmtQcnRWcmpxMjlYMFlKSlliTVZvUkJnOD1aICIe//tkaUJjV1JnWmc0c3VhckVGS0tQM01od1lQVHM9ZTPGc/fCPgJgBRKtAQglEqgBChxtWlhTOUVpaHA1a01JUHhYNjJmWXZOSDR3Z289EiQ5YmI3MDBlOS04M2YyLTRiNjgtYjg3MS03MTA2NjE5OTQzYTYYACAAKAAwsd6k2+8xOPLlpNvvMUDy5aTb7zFKHDMrZHQ4Q1VpVTNjWFg5eXNUSGlJL0F2ZGxiRT1aHyIdzGZQMlJlN0VOQ0hLNm03QlZ0bWFYdm93Y1hkWT1lAAAAAMI+AmAFEq0BCAcSqAEKHHRhdHFxblRGcFZUQzBTNG5hOEVzQTBOSnBTRT0SJDdjMzg3MmQzLTMwYTctNGRiNy1iZGJhLTdkYjQ0YmM0Y2JlOBgAIAAoADD2n77GqzI4sdKk2+8xQLHSpNvvMUoccW1uYmdsMldZZWpSb3MxSUxHV0dpNk5oelZVPVofIh3TaGNLZ0o0Wnh0Ymdsd2w5Z1ZSNjl5TWRlaXRrPWX9nIxKwj4CYAUSrgEIFBKpAQocT0tSbS83aEdyQ2YrQkk3UXp0WU9BYWR4ckk4PRIkNzJlNjM5ZWQtMDBjMi00YjAyLTg3N2MtMzdlMTQyMTdkMTJjGAAgACgAMJn40pyPMji0+9KcjzJAtPvSnI8yShxDM2wzaEs0WGRwM1NNOEo3cHE2T3lJUW9Dc2s9WiAiHv/yS0VEV2pndE02QW14ZTNGQVdUdUxBV2FXa0VRPWUAAAAAwj4CYAUSrgEIGRKpAQocNzI3WnBvUms1WFp0ZEUzRG5CR2tjb2ZlZXFNPRIkY2VlODJkMWYtN2UyNy00NzExLThiMGItYzViOTk3MDcwZDhlGAAgACgAMNaW27qSMjiYt+/R9jFAmLfv0fYxShwraFU3bk0zNXVuUWNFSmNLUXg1QmhLVDFYTlE9WiAiHv//UnRyR3VTcHlaTjJaTkxoa0F4em50UzRBQUZFPWVRpCm3wj4CYAUSrgEIFxKpAQocY2plRXpXWlJnOE5Fa0Y5UFhPS1MzUDlpT2VvPRIkNWI1ZTc0NTItNWI1MC00NGU3LTg3ZTYtM2ExNzdhMjJmYWMyGAAgACgAMM7WmZ7zMTix25me8zFAsduZnvMxShxIRWxvek5YVStueVdNSjl2ampTK3VVWlF0SEU9WiAiHv/9VGZwZmVvS2JyV3Q2UXhFbW5vV2F1a2tTcU04PWX/jveAwj4CYAUSjgEIAxKJAQocbmpnRHU4OGVDcnZYcDg2cEQ3ZkhHY3FGcDg4PRIkOTNiMmZlYTQtMzg1Ny01NjA5LThjMDAtMWFjNzU3MTE1ODM1GAAgACgAMOeyiYHoLzjzoaikgzBA86GopIMwShx5ek5CMDFjbjU0QTdjUlUwdVQrL1BnbVR0VW89WgBlAAAAAMI+AmAAEq4BCBgSqQEKHGZFY3FrZStIUHZ1VkVBVWZLQ3JqbGRyWDlvTT0SJDlmNzQ4YzlkLWFhZTItNGE1My05ZDIxLTZiNTI2MTg2YTU3NxgAIAAoADDr3POY9jE409/zmPYxQNPf85j2MUocWENHSWZYQnRjZVRFazBEeVN6OXRBZzFraDJvPVogIh7//ldZa3lyYWNPSVpoVVpqNEhzV1VHOXJuck1XRT1lD8w0FMI+AmAFEq4BCBMSqQEKHDVlSUEydkpqU2l0UW9LdS9VWWxJc0Urc0hpZz0SJGJjMTk2NTVmLTdiODMtNDU2Ny04OTllLWRkMWU4YzAwMjdkNRgAIAAoADCUzaTb7zE4kNKk2+8xQJDSpNvvMUocN1dHbExVaFdzTVowT2tDcW51cDFrNUgxYkRBPVogIh7/7lovdEhZbzlXSklueVliMExaaFpTT1ZNTGdwdz1l/473gMI+AmAFEq4BCBsSqQEKHDQrdmErYTdzaDUzRUZqbTBTNkNZQ1plY0o3RT0SJGE4MTcxY2ZhLTZmMTktNDUxYy04YTg4LTVkZTFlN2UzNzZjNhgAIAAoADDt0ujZozI41a2z3fkxQNWts935MUoccU9UeU13eFcwTldoWjBCcE8xemdsOXVhZ3dZPVogIh7//2xSQVN6dTNyZ1EzUklVWnp1TWFLMnY4bzAyTT1lyPM/u8I+AmAFEq4BCBISqQEKHE5jRWpsT0RwaWVzTHNVWDNHanNFWWgySTlCaz0SJDNjYTkwYjM3LWE2MjctNGI1YS1hNDViLTkxZGZkMTYzN2QxYhgAIAAoADDgpenZozI4xtGk2+8xQMbRpNvvMUocczNaRWg3OG1lR2xZMXZyUlpWMzBnaGVKT2pJPVogIh7/62NLT1EzUjF1SXdSY0tybFRZS25sWVluUGNhRT1lugosUcI+AmAFEq4BCBESqQEKHDdud2NjR2JaNktSV3o3NzRocEZVb2JWSEZFaz0SJDEzZDY0MWUwLThhOWEtNDdiZS1hMDc1LWFkMjkyMDBhZTcwNxgAIAAoADDKvenZozI4uK3o2aMyQLit6NmjMkocTWdUSXpKa2ZFeVgvb3J5VWVhUmUrYlM1bXhBPVogIh7/6nFhTE9RTkExclVURkJKYVJXZGhNUytMa080MD1l7wCOh8I+AmAFEq4BCBUSqQEKHEVjRmMrc2xzVkw4dU45V0tWdmN5S2RGZ0dTOD0SJDNjZmZkZmJkLTAyNDctNDYxYS1iM2IxLTM2NGE5Y2NiOTc4NBgAIAAoADCczaTb7zE4oNSk2+8xQKDUpNvvMUocVXVNU0RocG9heit2Z0ZaSENNZGZET2FCOE9rPVogIh7/90t2K2xwdGV3THo4ZkpjdG1IVU5GNi9CMDU3dz1l01XW2MI+AmAFEq4BCA4SqQEKHC9BZzJsbGNiSFZqMEhKNE1icVhGcEpYOUpvMD0SJGNiNDNhNjcxLTQxNzAtNDJlNy05ZWU4LTRlYWJiOWFlNTM3NhgAIAAoADCWzaTb7zE40tKk2+8xQNLSpNvvMUocVjBqbWMybVk0U3pnUjVSOHNKdHI1aWFqNnk4PVogIh7/3DNMWXZaZ3NQQjZ6N2VCSE5ZTytUN29DWHFqVT1lX+GoKsI+AmAFEq0BCAwSqAEKHGczdjN5alpzbW5RTWttMXJaTnFBN2J6eVEyZz0SJGY4ZGRlNjllLTA3YTgtNGEwMy1hNDRiLWNkYjA3NDM1MjFlMRgAIAAoADDtu4aCrjI498+k2+8xQPfPpNvvMUocOHpxTzVmeWdDZCt3WDBHdXpwU0Evb3pHUVRBPVofIh3+M3JHTlltcFlTZXpjY2w0SkN1SGVSbEpBU2Q0PWXI8z+7wj4CYAUSrAEIIxKnAQocMzg0OUYzRGpJY3FaRmhMSW5IUUhxcjBzYXQwPRIkNmFjNzVmMTYtMjkwMC00NjllLTg0MzUtOWJkMTAxMjg3YTQ2GAAgACgAMJrNpNvvMTjd06Tb7zFA3dOk2+8xShxDbUJiT0kwTTdVa2xnQXJ3Q2J4cFVLSjZJTkE9Wh4iHDJqYm5sOW5aVXhUNGNTbHgwMjJPeTJmU1VuWT1lAAAAAMI+AmAFEq0BCAoSqAEKHHQ1K1hwNUZPZ05qT00vSVlOaW9sUFQySzBwVT0SJGQ2MjQ5YjBjLTBhNzgtNGNjYS05ZWIwLWQyNTFmNDA4NTZmOBgAIAAoADDy/bWcnjI4oNGk2+8xQKDRpNvvMUocelhKbkxpMEx1UWZobWQwbHd1VVFkV0RFdEtZPVofIh36ZUpwcXdrMmZ3bzNUZnVvRHV3OXI2NXNzcWRzPWXAov1ewj4CYAUSrgEIDxKpAQocRENXaG9tSk9FZUhJTUN1SG9hZ3FPcE1SNWdBPRIkOTQyMTlhOTItZGQ3Mi00NTllLTk5MTQtMGRkYzAxY2UyODc4GAAgACgAMMPshJaIMjj5voSWiDJA+b6ElogyShxIYkY5clFJaEpkNkhIbk9kSkZlbHZNTjlwQ3c9WiAiHv/lVi9UUTIxaTRXN2pWYWdtTkk0N0RNZXI1Tm1JPWW20THiwj4CYAUSrQEIDRKoAQocSlFJaWl0UWpvTFZXUnJ6eDljS2lTMlFjdjZrPRIkMzU2YzU3YzktODRhYS00NDNhLWIxY2YtNDY1MmZhMDkzYmI2GAAgACgAMJjNpNvvMTiX06Tb7zFAl9Ok2+8xShxRb2l4eWFDSHErVEpaMGtCeHpQaG8xcWEzdzg9Wh8iHf9wdmJMQU1jWmt6NS9sa0d1ejBqdU5XZlBuRGs9ZQAAAADCPgJgBRKtAQgLEqgBChxCVUtrdUJIbXUzenZSOGs2aWFyVGhCbVp2OVk9EiQ4NGY2MDMxNC0zNTRjLTRjMzYtOTUyOC0zYmE5ZGQzZWI1ZWIYACAAKAAw66LxkK0yONLQpNvvMUDS0KTb7zFKHGkxMTRnMnFrZytvWEJYQzFBMGowVE43NE5uMD1aHyId/U50SVJhTjVPT1Y1K2lwUzk4Nk1xQVJQV083TT1lfC1UgMI+AmAFEq0BCAYSqAEKHG9ndnBNV3p3SkQ2UnZhWFNWK0l3UGQ5cXZJOD0SJDBmOTlhMWM1LWEwMjktNGFhYi05OGU4LWY1NTM3NzJiYTA5YRgAIAAoADCOxMD4nTI4/NCk2+8xQPzQpNvvMUoccnVQamlocVhJWWJsYzJmb2o1VjlRb3JQTG1BPVofIh2nQjZlWit1RWVhTit4dVhpQVJrRHV2R1pIdmxzPWVECP19wj4CYAUSrQEICRKoAQocNklJN1BGV1N6b1dReGt3UlFkREZuZTAwYlh3PRIkNDRkNDg4ZmItZjRjYy00Yzg3LTk4YWEtZjM1NGY4ZTRhZGZkGAAgACgAMNepm/+mMji706Tb7zFAu9Ok2+8xShxINHhXeFFjTHFsN1JqV1ZEQlR1dXNrZ3VvTTg9Wh8iHfRweGI1WkNWNW1qRG5jUUlQSFpRNy9CSVVNNlU9ZY3KVnvCPgJgBRKtAQgIEqgBChw0Nm5XQnIrazJCK0lOVGJvMUtQVVA4emt2cXc9EiRiZThlYTJmNS02OGUxLTRlMmItOTI1Mi03NmFiZWU2OGJiOWUYACAAKAAwj82k2+8xOKXQpNvvMUCl0KTb7zFKHFpzN2cxRUZaTkp5U3FibEwySjJZMGZwcnJhaz1aHyId6XBsYzhaakxCczhGUzNSZkVPMkdvTEQwYUV5TT1l9CL1G8I+AmAFEo4BCAESiQEKHHl4Si82ZnZrZWNyN2twNUVRekI0dFdMcGRiRT0SJGQxZDRhMjFmLTBkODktNTM3MC1iMTVkLWU3ZDViYmM2Yjg0NBgAIAAoADDnsomB6C84oqKopIMwQKKiqKSDMEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAADCPgJgADAAOAA=",
+   "version": 1
+}
