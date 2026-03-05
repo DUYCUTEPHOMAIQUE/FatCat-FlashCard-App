@@ -15,7 +15,8 @@ import 'package:FatCat/views/widgets/text_and_showall_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class CardsScreen extends StatelessWidget {
@@ -52,7 +53,7 @@ class CardsScreen extends StatelessWidget {
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back, color: Colors.black),
                 onPressed: () {
-                  Navigator.pop(context);
+                  context.pop();
                 },
               ),
               title: const Text("Thẻ học",
@@ -85,23 +86,17 @@ class CardsScreen extends StatelessWidget {
                                 title: 'Cập nhật bộ thẻ',
                                 isDestructive: false,
                                 onTap: () async {
-                                  PersistentNavBarNavigator.pushNewScreen(
-                                    context,
-                                    screen: CreateOrUpdateDeckScreen(
-                                      onDelete: () async {
-                                        await viewModel.loadCards();
-                                      },
-                                      deckId: deck.id,
-                                      userId: deck.user_id,
-                                      initialDeck: deck,
-                                      inClass: true,
-                                      classId: classId,
-                                      initialCards: cardData,
-                                    ),
-                                    withNavBar: false,
-                                    pageTransitionAnimation:
-                                        PageTransitionAnimation.cupertino,
-                                  );
+                                  context.push(AppRoutes.createDeck, extra: {
+                                    'deckId': deck.id,
+                                    'userId': deck.user_id,
+                                    'initialDeck': deck,
+                                    'inClass': true,
+                                    'classId': classId,
+                                    'initialCards': cardData,
+                                    'onDelete': () async {
+                                      await viewModel.loadCards();
+                                    },
+                                  });
                                 },
                               ),
                             ],
@@ -136,7 +131,7 @@ class CardsScreen extends StatelessWidget {
                                   if (rs != null) {
                                     if (rs) {
                                       await viewModel.deleteInServer(deck.id!);
-                                      // Navigator.pop(context);
+                                      // context.pop();
                                     } else {}
                                   }
                                 },
@@ -146,21 +141,15 @@ class CardsScreen extends StatelessWidget {
                                 icon: CupertinoIcons.square_pencil,
                                 title: 'Chỉnh sửa',
                                 onTap: () {
-                                  PersistentNavBarNavigator.pushNewScreen(
-                                    context,
-                                    screen: CreateOrUpdateDeckScreen(
-                                      deckId: deck.id,
-                                      initialDeck: deck,
-                                      onDelete: () async {
-                                        await viewModel.loadCards();
-                                        await viewModel.loadDeck();
-                                      },
-                                      initialCards: cardData,
-                                    ),
-                                    withNavBar: false,
-                                    pageTransitionAnimation:
-                                        PageTransitionAnimation.cupertino,
-                                  );
+                                  context.push(AppRoutes.createDeck, extra: {
+                                    'deckId': deck.id,
+                                    'initialDeck': deck,
+                                    'initialCards': cardData,
+                                    'onDelete': () async {
+                                      await viewModel.loadCards();
+                                      await viewModel.loadDeck();
+                                    },
+                                  });
                                 },
                               ),
                               ActionItem(
@@ -205,7 +194,7 @@ class CardsScreen extends StatelessWidget {
                                     },
                                   );
 
-                                  // Navigator.pop(context);
+                                  // context.pop();
                                 },
                               ),
                             ]
@@ -273,17 +262,11 @@ class CardsScreen extends StatelessWidget {
                         text: "Tự học",
                         onTap: () {
                           if (!cardData.isEmpty) {
-                            PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: SelfStudyScreen(
-                                cards: cardData,
-                                question_language: deck.question_language,
-                                answer_language: deck.answer_language,
-                              ),
-                              withNavBar: false,
-                              pageTransitionAnimation:
-                                  PageTransitionAnimation.cupertino,
-                            );
+                            context.push(AppRoutes.selfStudy, extra: {
+                              'cards': cardData,
+                              'question_language': deck.question_language,
+                              'answer_language': deck.answer_language,
+                            });
                           }
                         }),
                     SizedBox(
@@ -294,17 +277,11 @@ class CardsScreen extends StatelessWidget {
                         text: "Học theo tiến trình",
                         onTap: () {
                           if (!cardData.isEmpty) {
-                            PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen: IntermittentStudyScreen(
-                                cards: cardData,
-                                question_language: deck.question_language,
-                                answer_language: deck.answer_language,
-                              ),
-                              withNavBar: false,
-                              pageTransitionAnimation:
-                                  PageTransitionAnimation.cupertino,
-                            );
+                            context.push(AppRoutes.intermittentStudy, extra: {
+                              'cards': cardData,
+                              'question_language': deck.question_language,
+                              'answer_language': deck.answer_language,
+                            });
                           }
                         }),
                     SizedBox(
@@ -315,14 +292,9 @@ class CardsScreen extends StatelessWidget {
                         text: "Học chọn nhiều đáp án",
                         onTap: () {
                           if (!cardData.isEmpty) {
-                            PersistentNavBarNavigator.pushNewScreen(
-                              context,
-                              screen:
-                                  MultipleChoiceStudyScreen(cards: cardData),
-                              withNavBar: false,
-                              pageTransitionAnimation:
-                                  PageTransitionAnimation.cupertino,
-                            );
+                            context.push(AppRoutes.multipleChoice, extra: {
+                              'cards': cardData,
+                            });
                           }
                         }),
                     SizedBox(

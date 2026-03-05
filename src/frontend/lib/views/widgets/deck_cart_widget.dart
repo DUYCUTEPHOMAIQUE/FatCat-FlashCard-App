@@ -4,9 +4,10 @@ import 'package:FatCat/models/card_model.dart';
 import 'package:FatCat/models/card_provider.dart';
 import 'package:FatCat/models/deck_model.dart';
 import 'package:FatCat/views/screens/cards_screen.dart';
-import 'package:FatCat/views/screens/intermittent_study_screen.dart';
 import 'package:FatCat/views/widgets/card_item_widget.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class DeckCartWidget extends StatelessWidget {
@@ -20,16 +21,9 @@ class DeckCartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return CardsScreen(
-                deck: decks[0],
-              );
-            },
-          ),
-        );
+        context.push(AppRoutes.cards, extra: {
+          'deck': deck,
+        });
       },
       child: Card(
         elevation: 6,

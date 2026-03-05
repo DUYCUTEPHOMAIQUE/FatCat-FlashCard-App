@@ -6,7 +6,8 @@ import 'package:FatCat/views/screens/not_connection_screen.dart';
 import 'package:FatCat/views/widgets/class_card_widget.dart';
 import 'package:FatCat/views/widgets/class_dialog_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class ClassScreen extends StatelessWidget {
@@ -135,21 +136,15 @@ class ClassScreen extends StatelessWidget {
                         classItem: classItem,
                         inClass: true,
                         onTap: () {
-                          PersistentNavBarNavigator.pushNewScreen(
-                            context,
-                            screen: ClassDetailScreen(
-                              mClass: classItem,
-                              role: classItem.role,
-                              inClass: true,
-                              inviteCode: classItem.codeInvite,
-                              onDelete: () async {
-                                await viewModel.fetchOwnClasses();
-                              },
-                            ),
-                            withNavBar: false,
-                            pageTransitionAnimation:
-                                PageTransitionAnimation.cupertino,
-                          );
+                          context.push(AppRoutes.classDetail, extra: {
+                            'mClass': classItem,
+                            'role': classItem.role,
+                            'inClass': true,
+                            'inviteCode': classItem.codeInvite,
+                            'onDelete': () async {
+                              await viewModel.fetchOwnClasses();
+                            },
+                          });
                         },
                       );
                     },
@@ -190,19 +185,13 @@ class ClassScreen extends StatelessWidget {
                       return ClassCardWidget(
                         classItem: classItem,
                         onTap: () {
-                          PersistentNavBarNavigator.pushNewScreen(
-                            context,
-                            screen: ClassDetailScreen(
-                              mClass: classItem,
-                              inviteCode: classItem.codeInvite,
-                              onDelete: () async {
-                                await viewModel.fetchAllClasses();
-                              },
-                            ),
-                            withNavBar: false,
-                            pageTransitionAnimation:
-                                PageTransitionAnimation.cupertino,
-                          );
+                          context.push(AppRoutes.classDetail, extra: {
+                            'mClass': classItem,
+                            'inviteCode': classItem.codeInvite,
+                            'onDelete': () async {
+                              await viewModel.fetchAllClasses();
+                            },
+                          });
                         },
                       );
                     },

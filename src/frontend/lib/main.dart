@@ -1,10 +1,8 @@
 import 'package:FatCat/constants/seed_data.dart';
-import 'package:FatCat/models/card_model.dart';
 import 'package:FatCat/models/card_provider.dart';
 import 'package:FatCat/models/deck_provider.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/viewmodels/screen_control_viewmodel.dart';
-import 'package:FatCat/views/screens/home_screen.dart';
-import 'package:FatCat/views/screens/bottom_navigation_bar.dart';
 import 'package:FatCat/views/screens/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,17 +17,11 @@ Future<void> main() async {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (_) => ScreenControlViewModel(),
-        ), // First provider
-        ChangeNotifierProvider(
-          create: (_) => DeckProvider(),
-        ),
-        ChangeNotifierProvider(
-          create: (_) => CardProvider(),
-        ), // Second provider
+        ChangeNotifierProvider(create: (_) => ScreenControlViewModel()),
+        ChangeNotifierProvider(create: (_) => DeckProvider()),
+        ChangeNotifierProvider(create: (_) => CardProvider()),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }
@@ -37,17 +29,17 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return MaterialApp.router(
+      title: 'FatCat',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          fontFamily: 'Nunito',
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-          useMaterial3: true),
-      home: const ScreenControl(),
+        fontFamily: 'Nunito',
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
+        useMaterial3: true,
+      ),
+      routerConfig: appRouter,
     );
   }
 }

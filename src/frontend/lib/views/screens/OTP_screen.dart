@@ -1,11 +1,10 @@
 import 'package:FatCat/constants/colors.dart';
 import 'package:FatCat/viewmodels/otp_viewmodel.dart';
 import 'package:FatCat/viewmodels/setting_viewmodel.dart';
-import 'package:FatCat/views/screens/bottom_navigation_bar.dart';
-import 'package:FatCat/views/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class OtpScreen extends StatelessWidget {
@@ -102,11 +101,7 @@ class VerifyOTPScreenView extends StatelessWidget {
                   name,
                 )) {
                   await settingViewModel.checkLoginStatus();
-                  Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(
-                        builder: (context) => const ScreenControl()),
-                    (route) => false,
-                  );
+                  context.go(AppRoutes.home);
                 } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(

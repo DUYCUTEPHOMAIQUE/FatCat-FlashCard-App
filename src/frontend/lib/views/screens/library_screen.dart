@@ -1,7 +1,8 @@
 import 'package:FatCat/views/screens/cards_screen.dart';
 import 'package:FatCat/views/widgets/deck_lib_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import '../../viewmodels/library_viewmodel.dart';
 import 'not_connection_screen.dart';
@@ -103,16 +104,10 @@ class LibraryScreen extends StatelessWidget {
                 return DeckLibWidget(
                   deck: deck,
                   onTap: () async {
-                    PersistentNavBarNavigator.pushNewScreen(
-                      context,
-                      screen: CardsScreen(
-                        deck: deck,
-                        isLocal: false,
-                      ),
-                      withNavBar: false,
-                      pageTransitionAnimation:
-                          PageTransitionAnimation.cupertino,
-                    );
+                    context.push(AppRoutes.cards, extra: {
+                      'deck': deck,
+                      'isLocal': false,
+                    });
                   },
                 );
               },

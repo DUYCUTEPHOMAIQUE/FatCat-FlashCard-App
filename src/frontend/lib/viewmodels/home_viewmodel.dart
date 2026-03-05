@@ -1,15 +1,14 @@
 // ignore_for_file: avoid_print
 
 import 'package:FatCat/models/deck_model.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/services/DatabaseHelper.dart';
 import 'package:FatCat/services/connectivity_service.dart';
 import 'package:FatCat/services/deck_service.dart';
-import 'package:FatCat/views/screens/category_screen.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
-
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeViewModel extends ChangeNotifier {
   final DeckService deckService = DeckService();
@@ -34,12 +33,10 @@ class HomeViewModel extends ChangeNotifier {
       List<DeckModel> decks = await deckService.getDecks(category);
       _decks = decks;
       notifyListeners();
-      PersistentNavBarNavigator.pushNewScreen(
-        context,
-        screen: CategoryScreen(category: category, decks: decks),
-        withNavBar: false,
-        pageTransitionAnimation: PageTransitionAnimation.cupertino,
-      );
+      context.push(AppRoutes.category, extra: {
+        'category': category,
+        'decks': decks,
+      });
     } catch (e) {
       print(e);
     }
@@ -71,7 +68,6 @@ class HomeViewModel extends ChangeNotifier {
 
     if (hasNetworkConnection) {
       try {
-        // Thử kết nối đến một địa chỉ internet để kiểm tra
         final response = await InternetAddress.lookup('google.com');
         _isConnected = response.isNotEmpty && response[0].rawAddress.isNotEmpty;
       } on SocketException catch (_) {

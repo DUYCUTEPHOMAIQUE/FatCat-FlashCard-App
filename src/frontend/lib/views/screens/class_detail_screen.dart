@@ -13,7 +13,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class ClassDetailScreen extends StatelessWidget {
@@ -73,16 +74,10 @@ class ClassDetailScreen extends StatelessWidget {
                                   icon: CupertinoIcons.add,
                                   title: 'Tạo bộ thẻ',
                                   onTap: () {
-                                    PersistentNavBarNavigator.pushNewScreen(
-                                      context,
-                                      screen: CreateOrUpdateDeckScreen(
-                                        classId: mClass.id,
-                                        inClass: true,
-                                      ),
-                                      withNavBar: false,
-                                      pageTransitionAnimation:
-                                          PageTransitionAnimation.cupertino,
-                                    );
+                                    context.push(AppRoutes.createDeck, extra: {
+                                      'classId': mClass.id,
+                                      'inClass': true,
+                                    });
                                   },
                                 ),
                               ActionItem(
@@ -197,20 +192,16 @@ class DecksTab extends StatelessWidget {
               deck: deck,
               color: AppColors.green,
               onTap: () async {
-                PersistentNavBarNavigator.pushNewScreen(
-                  context,
-                  screen: CardsScreen(
-                      onDelete: () async {
-                        await viewmodel.fetchDecks();
-                      },
-                      deck: deck,
-                      isLocal: false,
-                      inClass: inClass,
-                      role: role,
-                      classId: mClass.id),
-                  withNavBar: false,
-                  pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                );
+                context.push(AppRoutes.cards, extra: {
+                  'deck': deck,
+                  'isLocal': false,
+                  'inClass': inClass,
+                  'role': role,
+                  'classId': mClass.id,
+                  'onDelete': () async {
+                    await viewmodel.fetchDecks();
+                  },
+                });
               },
             );
           },

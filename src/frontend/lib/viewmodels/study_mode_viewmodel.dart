@@ -1,8 +1,8 @@
 import 'package:FatCat/models/card_model.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/services/card_service.dart';
-import 'package:FatCat/views/screens/intermittent_study_screen.dart';
-import 'package:FatCat/views/screens/self_study_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class StudyModeViewModel extends ChangeNotifier {
   final String deckId;
@@ -20,19 +20,12 @@ class StudyModeViewModel extends ChangeNotifier {
   void routeToSelfStudyScreen(BuildContext context) async {
     await getCards();
     print("############# ${_cards}");
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SelfStudyScreen(cards: _cards)),
-    );
+    context.push(AppRoutes.selfStudy, extra: {'cards': _cards});
   }
 
   void routeToIntermittentStudyScreen(BuildContext context) async {
     await getCards();
     print("############# ${_cards}");
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-          builder: (context) => IntermittentStudyScreen(cards: _cards)),
-    );
+    context.push(AppRoutes.intermittentStudy, extra: {'cards': _cards});
   }
 }

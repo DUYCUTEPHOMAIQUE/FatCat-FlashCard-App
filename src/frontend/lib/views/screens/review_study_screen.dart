@@ -1,12 +1,12 @@
 import 'package:FatCat/viewmodels/review_screen_view_model.dart';
 import 'package:FatCat/viewmodels/screen_control_viewmodel.dart';
-import 'package:FatCat/views/screens/bottom_navigation_bar.dart';
 import 'package:FatCat/views/screens/decks_control_screen.dart';
 import 'package:FatCat/views/widgets/primary_button_widget.dart';
 import 'package:FatCat/views/widgets/primary_outline_button.dart';
 import 'package:flutter/material.dart';
 import 'package:FatCat/constants/colors.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class ReviewStudyScreen extends StatelessWidget {

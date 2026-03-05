@@ -1,11 +1,9 @@
 import 'package:FatCat/constants/colors.dart';
 import 'package:FatCat/models/card_model.dart';
 import 'package:FatCat/models/deck_model.dart';
-import 'package:FatCat/views/screens/bottom_navigation_bar.dart';
-import 'package:FatCat/views/screens/class_screen.dart';
-import 'package:FatCat/views/screens/decks_control_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:FatCat/viewmodels/create_deck_viewmodel.dart';
 import 'package:FatCat/views/widgets/card_edit_widget.dart';
@@ -61,7 +59,7 @@ class CreateOrUpdateDeckScreen extends StatelessWidget {
                       if (inClass && classId != null) {
                         print('=====Inclass');
                         await viewModel.saveDeckToServer(classId!);
-                        Navigator.pop(context);
+                        context.pop();
                       } else {
                         print('=====khong trong class');
 
@@ -69,13 +67,7 @@ class CreateOrUpdateDeckScreen extends StatelessWidget {
                         if (onDelete != null) {
                           onDelete!();
                         }
-                        PersistentNavBarNavigator.pushNewScreen(
-                          context,
-                          screen: DecksControl(),
-                          withNavBar: true,
-                          pageTransitionAnimation:
-                              PageTransitionAnimation.cupertino,
-                        );
+                        context.go(AppRoutes.decks);
                       }
                     },
                   ),

@@ -1,11 +1,8 @@
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/services/auth_service.dart';
-import 'package:FatCat/views/screens/forgot_password_screen.dart';
-import 'package:FatCat/views/screens/signup_screen.dart';
-
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginViewModel extends ChangeNotifier {
   final TextEditingController emailController = TextEditingController();
@@ -25,13 +22,11 @@ class LoginViewModel extends ChangeNotifier {
   }
 
   void routeToSignUp(BuildContext context) {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => const SignupScreen()));
+    context.push(AppRoutes.signup);
   }
 
   void routeToForgotPassword(BuildContext context) {
-    Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => const ForgotPassword()));
+    context.push(AppRoutes.forgotPassword);
   }
 
   Future<bool> login() async {

@@ -1,14 +1,8 @@
-import 'package:FatCat/models/card_model.dart';
-import 'package:FatCat/services/card_service.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/services/user_local_service.dart';
-import 'package:FatCat/views/screens/change_password_screen.dart';
-import 'package:FatCat/views/screens/forgot_password_screen.dart';
-import 'package:FatCat/views/screens/intermittent_study_screen.dart';
-import 'package:FatCat/views/screens/login_screen.dart';
-import 'package:FatCat/views/screens/self_study_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:go_router/go_router.dart';
 
 class SettingViewModel extends ChangeNotifier {
   bool _notificationEnabled = true;
@@ -22,6 +16,7 @@ class SettingViewModel extends ChangeNotifier {
   SettingViewModel() {
     checkLoginStatus();
   }
+
   void updateUserInfo(Map<String, String> newUserInfo) {
     userInfo = newUserInfo;
     print('OKKK OTP');
@@ -43,21 +38,11 @@ class SettingViewModel extends ChangeNotifier {
   }
 
   void routeToForgotPass(BuildContext context) {
-    PersistentNavBarNavigator.pushNewScreen(
-      context,
-      screen: ForgotPassword(),
-      withNavBar: false,
-      pageTransitionAnimation: PageTransitionAnimation.cupertino,
-    );
+    context.push(AppRoutes.forgotPassword);
   }
 
   void routeToChangePass(BuildContext context) {
-    PersistentNavBarNavigator.pushNewScreen(
-      context,
-      screen: ChangePassWordScreen(),
-      withNavBar: false,
-      pageTransitionAnimation: PageTransitionAnimation.cupertino,
-    );
+    context.push(AppRoutes.changePassword);
   }
 
   Future<void> checkLoginStatus() async {
@@ -69,11 +54,6 @@ class SettingViewModel extends ChangeNotifier {
   }
 
   void routeToLogin(BuildContext context) {
-    PersistentNavBarNavigator.pushNewScreen(
-      context,
-      screen: LoginScreen(),
-      withNavBar: false,
-      pageTransitionAnimation: PageTransitionAnimation.cupertino,
-    );
+    context.push(AppRoutes.login);
   }
 }

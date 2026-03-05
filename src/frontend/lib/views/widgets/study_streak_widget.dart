@@ -2,7 +2,6 @@ import 'package:FatCat/constants/colors.dart';
 import 'package:FatCat/utils/app_elevated_button_style.dart';
 import 'package:FatCat/views/screens/rank_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 // import 'package:intl/intl.dart';
 
 class StudyStreakWidget extends StatelessWidget {

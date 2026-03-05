@@ -1,7 +1,7 @@
+import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/services/auth_service.dart';
-import 'package:FatCat/views/screens/OTP_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:go_router/go_router.dart';
 
 class SignupViewModel extends ChangeNotifier {
   final TextEditingController usernameController = TextEditingController();
@@ -9,21 +9,19 @@ class SignupViewModel extends ChangeNotifier {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController confirmPasswordController =
       TextEditingController();
-  //
+
   String _username = '';
   String _email = '';
   String _password = '';
   String _confirmPassword = '';
   bool _isLoading = false;
 
-  // Getters
   String get username => _username;
   String get email => _email;
   String get password => _password;
   String get confirmPassword => _confirmPassword;
   bool get isLoading => _isLoading;
 
-  // Method to validate input
   String? validateInput() {
     _username = usernameController.text.trim();
     _password = passwordController.text.trim();
@@ -41,12 +39,10 @@ class SignupViewModel extends ChangeNotifier {
     if (_password != _confirmPassword) {
       return 'Mật khẩu không khớp';
     }
-    return null; // Input is valid
+    return null;
   }
 
-  // Method to handle signup logic
   Future<void> signup(BuildContext context) async {
-    // Start loading
     _isLoading = true;
     notifyListeners();
 
@@ -58,18 +54,11 @@ class SignupViewModel extends ChangeNotifier {
           'email': _email,
           'password': _password
         };
-
-        PersistentNavBarNavigator.pushNewScreen(
-          context,
-          screen: OtpScreen(data: data),
-          withNavBar: false,
-          pageTransitionAnimation: PageTransitionAnimation.cupertino,
-        );
+        context.push(AppRoutes.otp, extra: data);
       }
     } catch (e) {
       print(e);
     } finally {
-      // End loading
       _isLoading = false;
       notifyListeners();
     }

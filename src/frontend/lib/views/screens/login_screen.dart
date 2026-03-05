@@ -1,11 +1,9 @@
 import 'package:FatCat/constants/colors.dart';
 import 'package:FatCat/utils/app_text_style.dart';
 import 'package:FatCat/viewmodels/login_viewmodel.dart';
-import 'package:FatCat/views/screens/bottom_navigation_bar.dart';
-import 'package:FatCat/views/screens/forgot_password_screen.dart';
-import 'package:FatCat/views/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -66,12 +64,7 @@ class LoginScreenContent extends StatelessWidget {
             Center(
               child: TextButton(
                 onPressed: () {
-                  PersistentNavBarNavigator.pushNewScreen(
-                    context,
-                    screen: ForgotPassword(),
-                    withNavBar: false,
-                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                  );
+                  context.push(AppRoutes.forgotPassword);
                 },
                 child: Text(
                   'Quên mật khẩu?',
@@ -109,12 +102,7 @@ class LoginScreenContent extends StatelessWidget {
                                         Text('Kiểm tra thông tin đăng nhập')),
                               );
                             } else if (await viewModel.login()) {
-                              Navigator.of(context).pushAndRemoveUntil(
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        const ScreenControl()),
-                                (route) => false,
-                              );
+                              context.go(AppRoutes.home);
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
@@ -142,12 +130,7 @@ class LoginScreenContent extends StatelessWidget {
             Center(
               child: TextButton(
                 onPressed: () {
-                  PersistentNavBarNavigator.pushNewScreen(
-                    context,
-                    screen: SignupScreen(),
-                    withNavBar: false,
-                    pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                  );
+                  context.push(AppRoutes.signup);
                 },
                 child: RichText(
                   text: TextSpan(

@@ -11,7 +11,8 @@ import 'package:FatCat/views/widgets/study_streak_widget.dart';
 import 'package:FatCat/views/widgets/text_and_showall_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
+import 'package:FatCat/router/app_router.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatelessWidget {
@@ -113,16 +114,10 @@ class Home extends StatelessWidget {
                                         viewModel.decks[index].deck_cards_count,
                                     color: Colors.orange,
                                     onPressed: () {
-                                      PersistentNavBarNavigator.pushNewScreen(
-                                        context,
-                                        screen: CardsScreen(
-                                          deck: viewModel.decks[index],
-                                          isLocal: true,
-                                        ),
-                                        withNavBar: false,
-                                        pageTransitionAnimation:
-                                            PageTransitionAnimation.cupertino,
-                                      );
+                                      context.push(AppRoutes.cards, extra: {
+                                        'deck': viewModel.decks[index],
+                                        'isLocal': true,
+                                      });
                                     },
                                   );
                                 },
@@ -147,13 +142,7 @@ class Home extends StatelessWidget {
                                     const Duration(days: 2),
                                   ),
                                   onPressed: () {
-                                    PersistentNavBarNavigator.pushNewScreen(
-                                      context,
-                                      screen: RankScreen(),
-                                      withNavBar: false,
-                                      pageTransitionAnimation:
-                                          PageTransitionAnimation.cupertino,
-                                    );
+                                    context.push(AppRoutes.rank);
                                   },
                                 ),
                               )

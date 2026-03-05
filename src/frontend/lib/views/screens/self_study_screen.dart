@@ -1,7 +1,9 @@
 import 'package:FatCat/views/screens/review_study_screen.dart';
 import 'package:FatCat/views/widgets/primary_button_widget.dart';
 import 'package:FatCat/views/widgets/primary_outline_button.dart';
+import 'package:FatCat/router/app_router.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:provider/provider.dart';
@@ -390,14 +392,11 @@ class SelfStudyScreen extends StatelessWidget {
                   150,
                   () {
                     Navigator.of(context).pop();
-                    Navigator.of(context).pushReplacement(
-                      MaterialPageRoute(
-                        builder: (context) => ReviewStudyScreen(
-                            detailedAnswers: null,
-                            correctAnswers: viewModel.greenScore,
-                            incorrectAnswers: viewModel.orangeScore),
-                      ),
-                    );
+                    context.pushReplacement(AppRoutes.reviewStudy, extra: {
+                      'detailedAnswers': null,
+                      'correctAnswers': viewModel.greenScore,
+                      'incorrectAnswers': viewModel.orangeScore,
+                    });
                   },
                 )
               ],
