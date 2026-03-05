@@ -1,29 +1,70 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color white = Color(0xfff7f6fb);
-  static const Color lightMintGreen = Color(0xfff0f7f4);
+  AppColors._();
 
-  //background
-  static const Color backgroundCard = Color(0xfffefefe);
-  static const Color orange = Color(0xfff2994a);
-  static const Color greenBg = Color(0xff6fcf97);
-  static const Color greyText = Color(0xff5d5e5f);
-  static const Color backgroundButtonColor = Color(0xFF000000);
+  // ── Neutral ──────────────────────────────────────────────────
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color offWhite = Color(0xFFF7F6FB);
+  static const Color black = Color(0xFF000000);
+  static const Color black87 = Color(0xDD000000);
+  static const Color black54 = Color(0x8A000000);
+
+  // Grey scale
+  static const Color grey = Color(0xFF9E9E9E);
+  static const Color greyLight = Color(0xFFBDBDBD);   // grey[400]
+  static const Color greyMedium = Color(0xFF757575);  // grey[600]
+  static const Color greyDark = Color(0xFF424242);    // grey[800]
+  static const Color greyBackground = Color(0xFFF5F5F5);
+
+  // ── Brand / Primary ──────────────────────────────────────────
+  static const Color orange = Color(0xFFF2994A);       // custom warm orange
+  static const Color materialOrange = Color(0xFFFF9800);// Colors.orange
+  static const Color green = Color(0xFF4CAF50);        // Colors.green
+  static const Color brown = Color(0xFF795548);        // Colors.brown
+  static const Color purple = Color(0xFF9C27B0);       // Colors.purple
+  static const Color red = Color(0xFFF44336);          // Colors.red
+  static const Color blue = Color(0xFF2196F3);         // Colors.blue
+  static const Color teal = Color(0xFF009688);
+
+  // ── Bottom Navigation tab colors ─────────────────────────────
+  static const Color tabHome = materialOrange;
+  static const Color tabDecks = brown;
+  static const Color tabLibrary = purple;
+  static const Color tabClass = green;
+  static const Color tabSettings = black;
+
+  // ── Backgrounds ──────────────────────────────────────────────
   static const Color backgroundScreen = Color(0xFFF5F6F8);
+  static const Color backgroundCard = Color(0xFFFEFEFE);
+  static const Color backgroundButton = black;
+  static const Color lightMintGreen = Color(0xFFF0F7F4);
+  static const Color greenBg = Color(0xFF6FCF97);
 
-  //text
-  static const Color progressBarColor = Color.fromARGB(255, 84, 85, 93);
-  static const Color blackText = Color.fromARGB(255, 44, 44, 55);
+  // ── Text ─────────────────────────────────────────────────────
+  static const Color textPrimary = Color(0xFF2C2C37);    // blackText
+  static const Color textSecondary = Color(0xFF5D5E5F);  // greyText
+  static const Color textHint = grey;
 
-  //icon color
-  static const Color greyIcon = Color(0xff7c7d91);
+  // ── Icons ────────────────────────────────────────────────────
+  static const Color iconGrey = Color(0xFF7C7D91);
 
-  //bg button
-  static const Color red = Colors.red;
-  static const Color blue = Colors.blue;
-  static const Color green = Colors.green;
+  // ── Misc ─────────────────────────────────────────────────────
+  static const Color progressBar = Color(0xFF54555D);
+  static const Color borderCard = Color(0xFF636363);
+  static const Color transparent = Colors.transparent;
 
-  //
-  static const Color borderCard = Color.fromARGB(255, 99, 99, 99);
+  // ── Deprecated aliases (giữ để không break code cũ) ─────────
+  @Deprecated('Dùng AppColors.offWhite')
+  static const Color appWhite = offWhite;
+  @Deprecated('Dùng AppColors.textPrimary')
+  static const Color blackText = textPrimary;
+  @Deprecated('Dùng AppColors.textSecondary')
+  static const Color greyText = textSecondary;
+  @Deprecated('Dùng AppColors.iconGrey')
+  static const Color greyIcon = iconGrey;
+  @Deprecated('Dùng AppColors.backgroundButton')
+  static const Color backgroundButtonColor = backgroundButton;
+  @Deprecated('Dùng AppColors.progressBar')
+  static const Color progressBarColor = progressBar;
 }

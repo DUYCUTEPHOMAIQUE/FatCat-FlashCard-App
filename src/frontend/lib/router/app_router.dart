@@ -19,6 +19,7 @@ import 'package:FatCat/views/screens/rank_screen.dart';
 import 'package:FatCat/views/screens/self_study_screen.dart';
 import 'package:FatCat/views/screens/settings_screen.dart';
 import 'package:FatCat/views/screens/signup_screen.dart';
+import 'package:FatCat/constants/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -56,11 +57,11 @@ class ScaffoldWithNavBar extends StatelessWidget {
   const ScaffoldWithNavBar({super.key, required this.navigationShell});
 
   static const List<Color> _activeColors = [
-    Colors.orange,
-    Colors.brown,
-    Colors.purple,
-    Colors.green,
-    Colors.black,
+    AppColors.tabHome,
+    AppColors.tabDecks,
+    AppColors.tabLibrary,
+    AppColors.tabClass,
+    AppColors.tabSettings,
   ];
 
   @override
@@ -72,8 +73,8 @@ class ScaffoldWithNavBar extends StatelessWidget {
         type: BottomNavigationBarType.fixed,
         currentIndex: currentIndex,
         selectedItemColor: _activeColors[currentIndex],
-        unselectedItemColor: Colors.grey,
-        backgroundColor: Colors.white,
+        unselectedItemColor: AppColors.grey,
+        backgroundColor: AppColors.white,
         selectedFontSize: 12,
         unselectedFontSize: 12,
         onTap: (index) => navigationShell.goBranch(
