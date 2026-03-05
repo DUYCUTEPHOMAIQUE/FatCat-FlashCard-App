@@ -68,3 +68,50 @@ class AppColors {
   @Deprecated('Dùng AppColors.progressBar')
   static const Color progressBarColor = progressBar;
 }
+
+// ── Adaptive color set (thay đổi theo light/dark mode) ─────────────────────
+/// Tập màu adaptive, trả về giá trị khác nhau tùy theo light/dark.
+/// Sử dụng: `context.appColors.background` thay vì `AppColors.backgroundScreen`
+class _AdaptiveColors {
+  final Brightness _brightness;
+  const _AdaptiveColors(this._brightness);
+
+  bool get isDark => _brightness == Brightness.dark;
+
+  // Backgrounds
+  Color get background => isDark ? const Color(0xFF121212) : AppColors.backgroundScreen;
+  Color get surface    => isDark ? const Color(0xFF1C1C1E) : AppColors.backgroundCard;
+  Color get surfaceVariant => isDark ? const Color(0xFF2C2C2E) : const Color(0xFFF0F0F0);
+
+  // Text
+  Color get textPrimary   => isDark ? const Color(0xFFEAEAEA) : AppColors.textPrimary;
+  Color get textSecondary => isDark ? const Color(0xFFAAAAAA) : AppColors.textSecondary;
+  Color get textHint      => isDark ? const Color(0xFF757575) : AppColors.grey;
+
+  // Elements
+  Color get divider     => isDark ? const Color(0xFF3A3A3A) : const Color(0xFFE0E0E0);
+  Color get border      => isDark ? const Color(0xFF555555) : AppColors.greyLight;
+  Color get icon        => isDark ? const Color(0xFFBBBBBB) : AppColors.iconGrey;
+  Color get cardShadow  => isDark ? Colors.black54 : Colors.black12;
+
+  // Buttons
+  Color get buttonPrimary     => isDark ? const Color(0xFFFF9800) : AppColors.backgroundButton;
+  Color get buttonPrimaryText => AppColors.white;
+
+  // Nav bar
+  Color get navBarBackground => isDark ? const Color(0xFF1C1C1E) : AppColors.white;
+}
+
+extension AppColorsExtension on BuildContext {
+  /// Truy cập màu adaptive theo light/dark mode hiện tại.
+  ///
+  /// Ví dụ:
+  /// ```dart
+  /// color: context.appColors.textPrimary
+  /// backgroundColor: context.appColors.background
+  /// ```
+  _AdaptiveColors get appColors {
+    final brightness = Theme.of(this).brightness;
+    return _AdaptiveColors(brightness);
+  }
+}

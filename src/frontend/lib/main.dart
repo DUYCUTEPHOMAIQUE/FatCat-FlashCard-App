@@ -1,8 +1,10 @@
+import 'package:FatCat/constants/app_theme.dart';
 import 'package:FatCat/constants/seed_data.dart';
 import 'package:FatCat/models/card_provider.dart';
 import 'package:FatCat/models/deck_provider.dart';
 import 'package:FatCat/router/app_router.dart';
 import 'package:FatCat/viewmodels/screen_control_viewmodel.dart';
+import 'package:FatCat/viewmodels/theme_viewmodel.dart';
 import 'package:FatCat/views/screens/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +20,7 @@ Future<void> main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => ScreenControlViewModel()),
+        ChangeNotifierProvider(create: (_) => ThemeViewModel()),
         ChangeNotifierProvider(create: (_) => DeckProvider()),
         ChangeNotifierProvider(create: (_) => CardProvider()),
       ],
@@ -31,15 +34,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(
+    return Consumer<ThemeViewModel>(
+      builder: (context, themeVM, _) => MaterialApp.router(
       title: 'FatCat',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Nunito',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        useMaterial3: true,
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: Provider.of<ThemeViewModel>(context).themeMode,
       routerConfig: appRouter,
+      ),
     );
   }
 }

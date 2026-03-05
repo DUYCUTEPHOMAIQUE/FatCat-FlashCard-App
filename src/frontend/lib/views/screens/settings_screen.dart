@@ -1,6 +1,7 @@
 import 'package:FatCat/constants/colors.dart';
 import 'package:FatCat/utils/app_text_style.dart';
 import 'package:FatCat/viewmodels/setting_viewmodel.dart';
+import 'package:FatCat/viewmodels/theme_viewmodel.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -187,6 +188,49 @@ class Settings extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Text(
+                      "Giao diện",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    SizedBox(height: 16),
+                    Card(
+                      color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                        side: BorderSide(
+                          color: Colors.grey.withOpacity(0.2),
+                          width: 2,
+                        ),
+                      ),
+                      child: Consumer<ThemeViewModel>(
+                        builder: (context, themeVM, _) => SwitchListTile(
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 16, vertical: 4),
+                          secondary: Container(
+                            padding: const EdgeInsets.all(8),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(14),
+                            ),
+                            child: const Icon(Icons.dark_mode_outlined,
+                                color: Colors.black, size: 24),
+                          ),
+                          title: const Text(
+                            "Chế độ tối",
+                            style: TextStyle(
+                                fontSize: 16, fontWeight: FontWeight.w600),
+                          ),
+                          value: themeVM.isDark,
+                          activeColor: Colors.black,
+                          onChanged: (_) => themeVM.toggleDark(),
+                        ),
+                      ),
+                    ),
+                    SizedBox(height: 24),
                     Text(
                       "Tài khoản & Bảo mật",
                       style: TextStyle(
